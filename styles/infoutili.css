@@ -1,0 +1,53 @@
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 29%;
+    gap: 5rem;
+}
+.indicazioni {
+    text-align: left;
+    max-width: 300px;
+    
+}
+
+.iconcontainer {
+    width: 100%;
+    display: flex;
+}
+i {
+    font-size: 2.5rem;
+    margin-right: 10rem;
+}
+.infoutili {
+    max-width: 800px;
+}
+
+.mapcontainer {
+    width: 100%;
+   
+    
+}
+.map {
+    width: 65%;
+}
+.img{
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+}
+.imgcontainer {
+    display: flex;
+    justify-content: start;
+    gap: 5rem;
+    width: 100%;
+}
+
+.left-div {
+ margin-right: 40%;
+}

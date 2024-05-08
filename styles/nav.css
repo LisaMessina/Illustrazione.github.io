@@ -1,0 +1,70 @@
+.topnav {
+overflow: hidden;
+background-color: #2B083B;
+display: flex;
+justify-content: space-between;
+}
+
+.topnav > .logo {
+float: right;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;  
+font-size: 17px;
+}
+
+.topnav a {
+float: right;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;  
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #d593f3d1;
+color: black;
+}
+
+.topnav a.active {
+background-color: #66148cd1;
+color: white;
+}
+
+.topnav .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+.topnav {
+overflow: hidden;
+background-color: #2B083B;
+display: block;
+
+}
+.topnav > .logo {display: block; float: left;}
+.topnav a {display: none;}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnav > .hide{display: none;}
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}

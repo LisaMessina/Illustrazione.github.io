@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3rem;
+    align-items: center;
+}
+.authorbio{
+  max-width: 600px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10vh;
+  margin-bottom: 20px;
+}
+
+.box img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover; /* Ensures images fill container while maintaining aspect ratio */
+}
+
+.box{
+  position: relative;
+}

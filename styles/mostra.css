@@ -1,0 +1,25 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5rem;
+    height: 100vh;
+}
+main div {
+    max-width: 600px;
+    
+}
+.centro {
+    text-align: center;
+    text-align: left;
+  }
+
+.destra{
+    width: 100vw;
+    text-align: left;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

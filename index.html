@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/navscript.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <title>Home</title>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <script>
+      $.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+          sas();
+      });
+  </script>
+  <header>
+    <div class="left-div item"><h1>Viaggio nell'illustrazione contemporanea</h1></div>
+    <div class="right-div item">
+      <div class="inner-square">
+        1 Maggio <br />
+        Ore 18:00
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="left-div item"> 
+      <p>L'inaugurazione sarà non solo un'anteprima delle opere esposte, ma anche un'occasione per incontrare alcuni degli artisti partecipanti, 
+      condividere pensieri e discutere le diverse interpretazioni e ispirazioni dietro ogni pezzo.</p> 
+      <p>Questo  evento speciale offrirà agli appassionati d'arte, agli illustratori, ai designer e
+         al pubblico generale l'opportunità di immergersi in un mondo dove la creatività non conosce confini. 
+        </p>
+    </div>
+    <div></div>
+  <section>
+    <div class="image-board">
+      <div class="box">
+        <img src="immagini/hattie-clark/Handsome-Frank-Hattie Clark.jpg" alt="">
+        <div class="overlay">Hattie Clark</div>
+      </div>
+      <div class="box"><img src="immagini/icinori/sas.jpg" alt="">
+        <div class="overlay">Icinori</div></div>
+      <div class="box"><img src="immagini/martina-paukova/AP_Martina_Paukova_MUBI-scaled.jpg" alt="">
+        <div class="overlay">Martina Paukova</div></div>
+      <div class="box"><img src="immagini/emily-robertson/Handsome-Frank-Emily Robertson (3).jpg" alt="">
+        <div class="overlay">Emily Robertson</div></div>
+      <div class="box"><img src="immagini/sanna-mander/AP_Sanna_Mander_Freundin_ReachOut_2x-scaled.jpg" alt="">
+        <div class="overlay">Sanna Mander</div></div>
+      <div class="box"><img src="immagini/michelle-thompson/Handsome-Frank-Michelle Thompson (7).jpg" alt="">
+        <div class="overlay">Michelle Thompson</div></div>
+      <div class="box"><img src="immagini/adrian-johnson/AP_Adrian_Johnson_QUACK_2x-scaled.jpg" alt="">
+        <div class="overlay">Adrian Johnson</div></div>
+      <div class="box"><img src="immagini/Paul-Blow/Handsome-Frank-Paul_Blow_5.jpg" alt="">
+        <div class="overlay">Paul Blow</div></div>
+      <div class="box"><img src="immagini/jean-jullien/Handsome-Frank-Jean Jullien (1).jpg" alt="">
+        <div class="overlay">Jean Jullien</div></div>
+    </div>
+  </section>
+  </main>
+  <div id="foot-placeholder"></div>
+  <script>
+      $.get("footer.html", function(data){
+          $("#foot-placeholder").replaceWith(data);
+          sas();
+      });
+  </script>
+</body>
+</html>

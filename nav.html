@@ -1,0 +1,29 @@
+<div class="topnav" id="myTopnav">
+    <div class="logo" id="logo">Visioni Illustrate</div>
+    <div>
+        <a href="infoutili.html" id="infoutili">Info Utili</a>
+        <a href="mostra.html" id="mostra">Mostra</a>
+        <a href="artisti.html" id="artisti">Artisti</a>
+        <a href="index.html" id="index">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+</div>
+  
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        var y = document.getElementById("logo");
+        if (x.className === "topnav") {
+            y.className += " hide";
+            x.className += " responsive";
+        } else {
+            y.className = "logo";
+            x.className = "topnav";
+        }
+    }
+</script>
+
+

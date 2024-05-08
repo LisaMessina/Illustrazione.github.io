@@ -1,0 +1,69 @@
+.left-div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 25vw;
+}
+
+.right-div {
+display: flex;
+align-items: center;
+border-radius: 10%;
+}
+
+.inner-square {
+text-align: center;
+padding: 0.5rem;
+width: 10vh;
+}
+
+.item{
+  margin: 0 auto;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10vh;
+  margin-bottom: 20px;
+}
+
+.box img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover; /* Ensures images fill container while maintaining aspect ratio */
+}
+
+.gallery-container img:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+  cursor: pointer; /* Display a pointer cursor on hover */
+}
+
+.box{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.box:hover .overlay {
+  opacity: 1; /* Show the title on hover */
+}

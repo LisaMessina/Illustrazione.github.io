@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/navscript.js" defer></script>
+    <script src="scripts/jeanjulien.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/jeanjulien.css">
+    <title>Jean Julien</title>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            sas();
+        });
+    </script> 
+    <header>
+      <div class="left-div item"><h1>Jean Julien</h1></div>
+      <div class="right-div item">
+        <div class="inner-square">
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="authorbio"><p>Where to start with Jean? He's the widely-adored French illustrator whose incredible popularity stems from his obsession, with interpreting the world around him.</p>
+            <p>From worldwide political commentary to doodling on windows, walls, tables and objects around him, Jean's work is instantly recognisable, inimitable and holds a purity that only truly can be borne from true passion for his craft.</p>
+            <p>Accompanying Jean's effortless, humorous style, is his incredible dedication. He juggles countless commissions, exhibitions and mediums simultaneously, driven by an undiminished need to communicate.</p>
+            
+            
+            </div>
+        <div>
+            <div class="gallery-container"></div>
+        </div>
+    </main>
+    <div id="foot-placeholder"></div>
+    <script>
+        $.get("footer.html", function(data){
+            $("#foot-placeholder").replaceWith(data);
+            sas();
+        });
+    </script>
+</body>
+</html>

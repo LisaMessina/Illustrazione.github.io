@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/navscript.js" defer></script>
+    <script src="scripts/icinori.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/icinori.css">
+    <title>Jean Julien</title>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            sas();
+        });
+    </script> 
+    <header>
+      <div class="left-div item"><h1>Icinori</h1></div>
+      <div class="right-div item">
+        <div class="inner-square">
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="authorbio"><p>Mayumi Otero and Raphael Urwiller’s prolific outpouring of work makes a very good case for living somewhere as they do in a quiet suburb just outside of Paris. They met as art students in Strasbourg a decade ago and now spend their days drawing, writing, painting, publishing, collecting, and, in their words, “expanding their inner universe.” Their work is a breathlessly wonderful, modern folkloric study of scenes and characters that are at once of our world and from another galaxy altogether. Together, they love solving problems, getting lost in research, coming up with ideas, experimenting with new working methods, and, most importantly, finding joy and happiness from the result. “Always be on the move, intellectually and spatially,” they say. “In a rare and exceptional moment, something incredible appears in a drawing; it’s pure magic, and it is precious and extraordinary.
+             Most of our work is looking for those moments of grace.” Which is something we predict happens rather regularly.</p>   
+            </div>
+        <div>
+            <div class="gallery-container"></div>
+        </div>
+    </main>
+    <div id="foot-placeholder"></div>
+    <script>
+        $.get("footer.html", function(data){
+            $("#foot-placeholder").replaceWith(data);
+            sas();
+        });
+    </script>
+</body>
+</html>

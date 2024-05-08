@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="scripts/navscript.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/infoutili.css" />
+    <link rel="stylesheet" href="styles/nav.css">
+    <title>Info</title>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+              $("#nav-placeholder").replaceWith(data);
+              sas();
+            }, "html");
+        </script> 
+    <header>
+      <div class="left-div item"><h1>Info Utili</h1></div>
+      <div class="right-div item">
+        <div class="inner-square">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="indicazioni">1-31 Maggio </br>
+        Inaugurazione 1 maggio ore 18:00</br>
+        Accademia di belle arti Catania, Via Raimondo Franchetti 5</div>
+      <div class="iconcontainer"><i class="fa-solid fa-bus"></i><i class="fa-solid fa-car"></i></div>
+      <div class="mapcontainer"><img src="immagini/info utili/mappa.png" alt="" class="map"></div>
+      <div class="infoutili">Il laboratorio creativo per bambini è un'avventura artistica pensata per stimolare 
+        l'immaginazione e la creatività dei più piccoli. Attraverso attività manuali, disegno e pittura,
+         i bambini avranno l'opportunità di esplorare diverse tecniche artistiche in un ambiente divertente e accogliente. 
+         Guidati da istruttori esperti, impareranno a esprimere le proprie idee e emozioni creando opere d'arte uniche.
+          Questo workshop è progettato non solo per sviluppare le abilità artistiche, ma anche per incoraggiare il lavoro di squadra, 
+          la fiducia in sé e l'apprezzamento per l'arte. Un'esperienza educativa e coinvolgente, perfetta per liberare la fantasia e il talento di ogni bambino.</div>
+        <div class="imgcontainer">
+          <img src="immagini/info utili/animali.png" alt="" class="img">
+          <img src="immagini/info utili/bimbi.png" alt="" class="img">
+        </div>
+    </main>
+    <div id="foot-placeholder"></div>
+    <script>
+        $.get("footer.html", function(data){
+            $("#foot-placeholder").replaceWith(data);
+            sas();
+        });
+    </script>
+
+
+
+
+  
+</body>
+</html>
