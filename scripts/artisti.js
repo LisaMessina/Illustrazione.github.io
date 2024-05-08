@@ -1,5 +1,5 @@
 const imageData = [
-  { src: "/immagini/hattie-clark/Handsome-Frank-Hattie Clark.jpg", title: "Jean Jullien", link: "../jeanjulien.html" }, 
+  { src: "/immagini/jean-jullien/Handsome-Frank-Jean Jullien (1).jpg", title: "Jean Jullien", link: "../jeanjulien.html" }, 
   { src: "/immagini/sanna-mander/AP_Sanna_Mander_Freundin_ReachOut_2x-scaled.jpg", title: "Sanna Mander", link: "../sennamander.html"  },
   { src: "/immagini/icinori/sas.jpg", title: "Icinori", link: "../icinori.html"  },
   { src: "/immagini/emily-robertson/Handsome-Frank-Emily Robertson (3).jpg", title: "Emily Robertson" },
@@ -7,8 +7,8 @@ const imageData = [
   { src: "/immagini/michelle-thompson/Handsome-Frank-Michelle Thompson (7).jpg", title: "Michelle Thompson" },
   { src: "/immagini/adrian-johnson/AP_Adrian_Johnson_QUACK_2x-scaled.jpg", title: "Adrian johnson" },
   { src: "/immagini/Paul-Blow/Handsome-Frank-Paul_Blow_5.jpg", title: "Paul Blow" },
-  { src: "/immagini/jean-jullien/Handsome-Frank-Jean Jullien (1).jpg", title: "Jean Jullien" },
-  // Add more image objects here
+  { src: "/immagini/hattie-clark/Handsome-Frank-Hattie Clark.jpg", title: "Hattie-Clark" },
+  
 ];
 
 
